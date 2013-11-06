@@ -20,11 +20,10 @@ Pod::Spec.new do |s|
   s.summary      = "Allow specific borders on calayer for uiview elements"
 
   s.description  = <<-DESC
-                   e.g. myInstanceOfAView.borderDirection = AUIFlexibleBordersDirectionRight | AUIFlexibleBordersDirectionTop;
+                   Allow borders on specific sides of a uiview e.g. only top and left
                    DESC
 
   s.homepage     = "http://corecocoa.wordpress.com/2012/03/04/selective-layer-borders/"
-
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -33,9 +32,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT (example)'
-  # s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
-
+  s.license      = { :type => "MIT (example)", :file  => "MIT-LICENSE" }
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -45,9 +42,6 @@ Pod::Spec.new do |s|
   #
 
   s.author       = { "Adam Siton" => "" }
-  # s.authors      = { "Tommy Devol" => "pair+tommy@rally.org", "other author" => "email@address.com" }
-  # s.author       = 'Tommy Devol', 'other author'
-
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -119,7 +113,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   # s.dependency 'JSONKit', '~> 1.4'
